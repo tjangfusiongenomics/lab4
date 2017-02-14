@@ -1,0 +1,26 @@
+﻿@model lab4_application.Models.Province
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Province</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProviceName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProviceName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProviniceCode }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
